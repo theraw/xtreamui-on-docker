@@ -27,3 +27,5 @@ Premium installation for 50$ one time by me includes.
 - Help with panel bugs or import/export.
 - General Support and help you receive from me is valid for 1 Year.
 - I'm a linux *Psychomaniac* with 15 years of exprience on linux servers i can fix/help/debug anything.
+
+How can we talk? => https://discord.gg/3t2Y7BB
