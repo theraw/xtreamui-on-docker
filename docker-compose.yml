@@ -2,7 +2,7 @@ version: '3.7'
 services:
   xui:
     container_name: xui
-    image: '086d9d33d6aa'
+    image: 'theraw/xtreamui-on-docker:xtream-ui'
     shm_size: '512MB'
     privileged: true
     restart: unless-stopped
@@ -16,9 +16,6 @@ services:
     networks:
       nginx_net:
         ipv4_address: 172.55.0.74
-    dns:
-     - "1.1.1.1"
-     - "1.1.0.0"
     ulimits:
      nproc: 65535
     cap_add:
