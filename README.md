@@ -19,7 +19,7 @@ Premium installation for 25$ one time by me includes.
 
 # Business Installation 50$
 
-Premium installation for 50$ one time by me includes.
+Business installation for 50$ one time by me includes.
 - Docker installation/setup full.
 - Proxy With a Dashboard (scr : https://prnt.sc/s0tb18 )
 - Cache setup as you want however you want (cache for nginx with 100% hit chance, and cache for php)
