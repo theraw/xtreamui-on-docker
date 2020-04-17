@@ -1,5 +1,5 @@
 # Xtreamui-on-docker
-![Youtube Tutorial](https://www.youtube.com/watch?v=eiDSrA8Z-iw)
+![https://github.com/theraw/xtreamui-on-docker/raw/master/scr/s1.png](https://www.youtube.com/watch?v=eiDSrA8Z-iw)
 
 
 ```bash
