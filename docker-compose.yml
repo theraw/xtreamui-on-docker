@@ -21,7 +21,8 @@ services:
     cap_add:
      - "CAP_SYS_RESOURCE"
      - "CAP_SYS_TIME"
-    command: ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/supervisord.conf"]
+    #command: ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/supervisord.conf"]
+    command: ["/usr/sbin/sshd", "-D"]
 networks:
   nginx_net:
     driver: bridge
