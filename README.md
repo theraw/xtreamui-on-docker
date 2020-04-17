@@ -6,6 +6,7 @@ curl -s https://raw.githubusercontent.com/theraw/xtreamui-on-docker/master/docke
 
 docker-compose -f xui.yml up -d
 ```
+Why am i seeing a old version of Xtream-UI?! IDK you can update later?
 
 Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `admin`)
 
