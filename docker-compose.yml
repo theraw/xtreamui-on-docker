@@ -1,8 +1,8 @@
-version: '3.7'
+version: '3.8'
 services:
   xui:
     container_name: xui
-    image: 'theraw/xtreamui-on-docker:xtream-ui-beta1'
+    image: 'theraw/xtreamui-on-docker:xtream-ui-beta2'
     shm_size: '512MB'
     privileged: true
     restart: unless-stopped
@@ -15,15 +15,37 @@ services:
       - '0.0.0.0:25500:25500'
     networks:
       nginx_net:
-        ipv4_address: 172.55.0.74
+        ipv4_address: 172.70.0.70
+    dns:
+     - "8.8.8.8"
+     - "8.8.4.4"
     ulimits:
      nproc: 65535
     cap_add:
-     - "CAP_SYS_RESOURCE"
-     - "CAP_SYS_TIME"
+     - ALL
     command: ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/supervisord.conf"]
-    # if for some reason "xui" container fails to start witch CMD to sshd (you'll have to manually start services then)!
-    #command: ["/usr/sbin/sshd", "-D"]
+  db:
+    container_name: db
+    image: 'mysql'
+    shm_size: '512MB'
+    privileged: true
+    restart: unless-stopped
+    networks:
+      nginx_net:
+        ipv4_address: 172.70.0.80
+    dns:
+     - "8.8.8.8"
+     - "8.8.4.4"
+    ulimits:
+     nproc: 65535
+    cap_add:
+     - ALL
+    environment:
+      MYSQL_ROOT_PASSWORD: 'vAaGCfUEao'
+      MYSQL_DATABASE: 'xtreamui'
+      MYSQL_USER: 'raw'
+      MYSQL_PASSWORD: 'vAaGCfUEao'
+
 networks:
   nginx_net:
     driver: bridge
@@ -32,4 +54,4 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 172.55.0.0/16
+      - subnet: 172.70.0.0/16
