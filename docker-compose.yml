@@ -22,7 +22,7 @@ services:
      - "CAP_SYS_RESOURCE"
      - "CAP_SYS_TIME"
     command: ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/supervisord.conf"]
-    # if for some reason "xui" container fails to start witch CMD to sshd (you'll have to manually start services then)!
+    # if for some reason "xui" container fails to start switch CMD to sshd (you'll have to manually start services then)!
     #command: ["/usr/sbin/sshd", "-D"]
 networks:
   nginx_net:
