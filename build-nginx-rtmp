@@ -24,7 +24,6 @@
 --with-stream_ssl_module \
 --with-threads \
 --with-http_dav_module \
---with-openssl=/opt/openssl-OpenSSL_1_1_1g \
 --with-ld-opt="-Wl,-rpath,/usr/local/lib/" \
 --add-module=/opt/nginx-rtmp-module-1.2.1 \
 --add-module=/opt/ngx_http_geoip2_module
