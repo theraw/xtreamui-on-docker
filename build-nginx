@@ -3,12 +3,14 @@
 --group=xtreamcodes \
 --sbin-path=/home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx            \
 --conf-path=/home/xtreamcodes/iptv_xtream_codes/nginx/conf/nginx.conf       \
---pid-path=/home/xtreamcodes/iptv_xtream_codes/nginx_rtmp/nginx.pid         \
---lock-path=/home/xtreamcodes/iptv_xtream_codes/nginx_rtmp/nginx_rtmp.lock  \
+--pid-path=/home/xtreamcodes/iptv_xtream_codes/nginx/nginx.pid         \
+--lock-path=/home/xtreamcodes/iptv_xtream_codes/nginx/nginx_rtmp.lock  \
 --error-log-path=/home/xtreamcodes/iptv_xtream_codes/logs/error.log    \
---http-log-path=/home/xtreamcodes/iptv_xtream_codes/logs/access.log \
+--http-log-path=/home/xtreamcodes/iptv_xtream_codes/logs/access.log    \
 --with-pcre                   \
 --with-file-aio \
+ --with-http_v2_module \
+ --with-http_secure_link_module \
 --with-http_geoip_module \
 --with-http_gunzip_module \
 --with-http_gzip_static_module \
@@ -23,7 +25,7 @@
 --with-debug \
 --with-stream_ssl_module \
 --with-threads \
---with-http_dav_module \
---with-ld-opt="-Wl,-rpath,/usr/local/lib/" \
+--add-module=/opt/ngx_devel_kit \
 --add-module=/opt/nginx-rtmp-module-1.2.1 \
---add-module=/opt/ngx_http_geoip2_module
+--add-module=/opt/ngx_http_geoip2_module \
+--add-module=/opt/headers-more-nginx-module
