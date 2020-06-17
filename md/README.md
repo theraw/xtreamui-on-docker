@@ -23,7 +23,7 @@ this will run all cronjobs that are into /home/xtreamcodes/iptv_xtream_codes/cro
 
 
 
-After this everything whould be working well however the way how it works you have no "start_services.sh" anymore, 
+After this everything should be working well however the way how it works you have no "start_services.sh" anymore, 
 if you want to restart services you can example to restart nginx you have to only kill it
 ```bash
 killall nginx
