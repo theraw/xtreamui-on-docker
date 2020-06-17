@@ -3,7 +3,7 @@ services:
   xui:
     container_name: xui
     image: 'theraw/xtreamui-on-docker:xtream-ui-beta2'
-    shm_size: '512MB'
+    shm_size: '1GB'
     privileged: true
     restart: unless-stopped
     ports:
