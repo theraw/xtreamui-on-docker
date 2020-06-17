@@ -12,10 +12,10 @@ docker-compose -f xui.yml up -d
 ```
 After installation is suggested to setup 2 important things [IMPORTANT!!!!]
 
-1. Change main server IP
-2. Setup Cronjob, is not needed to add all files on by one all you need to do is
+1. **Change main server IP**
+2. **Setup Cronjob, is not needed to add all files on by one all you need to do is**
    `sudo crontab -e`
-   and add this code
+   **and add this code**
    
    `*/1 * * * * /home/xtreamcodes/run_cron.sh`
 
