@@ -42,6 +42,52 @@ As far as i've tested Streaming works thus i'm not support
 i'm just giving you a easy way to deploy XtreamUI so please avoid asking me support related questions.
 
 
+
+#For noobs
+
+Q: I can't find xtreamui files?
+
+A: Your files are not directly on your server but are into a docker container, a docker container is like a very small server into your server, if that makes no sense then think like you're using virtualbox to create a server that's close to docker containers, 
+but how to access files now?
+```bash
+# Access docker container 
+docker exec -it xui bash
+
+#Find xtreamui files
+ls /home/xtreamcodes
+
+# exit docker container
+exit
+
+# List all your containers created on your server.
+docker ps
+```
+
+Q: But how do you create a small server into my server i don't think my server can handle that?
+
+A: It can handle it docker containers are similar to virtualbox or vmware but is not the same and resource usage is very low that means you can still use docker even if you have only 2GB Ram, 1vCore.
+
+Q: Ok how to start stop this docker container?
+
+A:
+```bash
+#stop
+docker stop xui
+
+#start
+docker start xui
+
+#logs
+docker logs xui
+
+#"xui" is container name, to list all docker commands execute docker --help
+# when you login into a docker container with
+docker exec -it xui bash
+# this means that from now on you'll see only files that are inside this container and all proccess list is only proccess list
+# which are running into container, Container Distro can change is not the same as your server
+# example your server can have ubuntu 14 but your container can be debian 10.
+```
+
 Follow Me for future releases
 
 https://www.youtube.com/channel/UC3GYfx-3XOn7eLk-B_ZTLgg
