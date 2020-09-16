@@ -11,4 +11,4 @@ Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `ad
 
 # The discord channel is meant for installation question/support not XUI support!
 
-[Video](https://discordapp.com/widget?id=700397266090852432&theme=dark]
+[Video](https://discordapp.com/widget?id=700397266090852432&theme=dark)
