@@ -10,3 +10,5 @@ docker-compose -f xui.yml up -d
 Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `admin`)
 
 # The discord channel is meant for installation question/support not XUI support!
+
+![Discord](https://git.daraw.nl/theraw/server.html)
