@@ -10,14 +10,14 @@ Why am i seeing a old version of Xtream-UI?! IDK you can update later?
 
 Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `admin`)
 
-# Premium Installation 25$
+# Premium Installation x
 
 Premium installation for 25$ one time by me includes.
 - Docker installation/setup full.
 - Proxy For your domain including SSL.
 - Cache setup and basic optimization.
 
-# Business Installation 50$
+# Business Installation x
 
 Business installation for 50$ one time by me includes.
 - Docker installation/setup full.
